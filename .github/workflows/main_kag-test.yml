@@ -30,6 +30,8 @@ jobs:
 
       - name: Install and build Vue.js project
         run: |
+          npx -p npm-check-updates  -c "ncu"
+          npx -p npm-check-updates  -c "ncu -u"
           npm install
           npm run build
 
